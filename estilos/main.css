@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
     list-style: none;
     text-decoration: none;
 }
@@ -12,6 +13,18 @@
 h1, h2 {
     color: var(--destaque);
     font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h2 > i {
+    margin-right: 0.5rem;
+}
+
+p {
+    color: var(--texto);
 }
 
 :root {
@@ -31,6 +44,8 @@ body, html {
 }
 
 header {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -71,13 +86,13 @@ main {
     grid-template-columns: 1fr 90vw 1fr;
     gap: 1rem;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--fundo-principal);
 }
 
 section {
     background-color: var(--fundo-card);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -116,25 +131,42 @@ div.dadospessoais > h1{
 
 div.dadospessoais > p {
     letter-spacing: 0.01rem;
+    line-height: 1.7rem;
+}
+
+div.redessociais {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    width: 100%;
+    height: 50px;
+}
+
+div.redessociais i{
+    font-size: 1.7rem;
+    color: var(--destaque);
+}
+
+div.redessociais i:hover{
+    font-size: 1.7rem;
+    color: var(--destaque-inverso);
+    transition: color 0.3s ease-in-out;
 }
 
 /* video */
 
 section.apresentacao {
+    padding: 0 1rem 1rem 1rem;
     grid-column: 2;
 }
 
-section.apresentacao > h2 > i{
-    margin-right: 1rem;
-}
-
-div.title {
+div.titleapresentation{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-    
-    border: 2px solid rebeccapurple;
+    padding: 0.5rem 0 ;
 }
 
 div.video {
@@ -150,4 +182,173 @@ iframe {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
+}
+
+/* estilizaçao e organizaçao dos h2 */
+div.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0.5rem 0 ;
+}
+
+section.minhasskills {
+    padding: 0 1rem 1rem 1rem;
+}
+
+div.habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;   
+    width: 100%;
+}
+
+div.titleshabilidades {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1rem 0 0;
+}
+
+div.skill {
+    
+}
+
+.titleskills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.titleskills > h3 {
+    font-size: 1em;
+}
+
+.titleskills > p {
+    color: var(--destaque);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+div.barradeprograsso {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8px;
+    border-radius: 1rem;
+    background-color: var(--fundo-principal);
+}
+
+div.barracheia {
+    width: 100%;
+    height: 100%;
+    background-color: var(--destaque-inverso);
+    border-radius: 1rem;
+}
+
+div.barravazia {
+    width: 100%;
+    height: 100%;
+    background-color: var(--fundo-principal);
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+
+/* formacao */
+
+section.formacao {
+    padding: 0 1rem 1rem 1rem;
+}
+
+div.containerformacao {
+    display: flex;
+    flex-direction: column;  
+    gap: 1rem;
+    width: 100%;
+}
+
+div.containerdiplomas {
+    display: flex;
+    flex-direction: column;  
+    gap: 1rem;
+    width: 100%;
+}
+
+div.diplomas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: var(--fundo-principal);
+    border-radius: 1rem;
+}
+
+div.diplomas:hover .barralateral{
+    padding-right: 1rem;
+    background-color: var(--destaque);
+    transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+div.diplomas:hover {
+    cursor: pointer;
+}
+
+div.barralateral {
+    width: 6px;
+    height: 100%;
+    background-color: var(--destaque-inverso);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+div.diplomacontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+div.diplomacontent > p.ano {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+div.diplomacontent > h3 {
+    font-size: 1.1em;
+    color: var(--destaque-inverso);
+}
+
+footer {
+    background-color: var(--destaque);
+    height: 7dvh;
+    width: 100%;
+}
+
+footer>div.containerfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--texto-inverso);
+}
+div.containerfooter > p {
+    font-size: 1.1em;
+    color: white;
+}
+
+div.containerfooter > p > a#cursoemvideo {
+    color: white;
+     padding-bottom: 5px;
+}
+
+div.containerfooter > p > a#cursoemvideo:hover {
+    color: var(--destaque-inverso);
+    border-bottom: 1px solid var(--destaque-inverso);
 }
