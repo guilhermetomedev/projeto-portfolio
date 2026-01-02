@@ -5,206 +5,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/media.css">
     <script src="https://kit.fontawesome.com/fd249ef772.js" crossorigin="anonymous"></script>
     <title>Projeto Portfólio</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#deixe-meapresentar"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#minhasskills"><i class="fa-solid fa-newspaper"></i></a></li>
-                <li><a href="#formação"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#projetos"><i class="fa-solid fa-moon"></i></a></li>
-            </ul>
-        </nav>
-        <!-- <i class="fa-solid fa-sun"></i> -->
+        <ul class="menu">
+            <li><a href="#apresentacao" target="_self"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#minhas-skills" target="_self"><i class="fa-solid fa-brain"></i></a></li>
+            <li><a href="#formacao" target="_self"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="#projetos" target="_self"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+            <li><a href="#" target="_self"><i class="fa-solid fa-moon"></i></a></li>
+        </ul>
     </header>
     <main>
-        <section class="ficha">
-                <div class="foto">
-                    <img src="imagens/guanabara-perfil.jpg" alt="Professor Gustavo Guanabara">
-                </div>
-                <div class="dadospessoais">
-                    <h1>Gustavo Guanabara</h1>
-                    <p>Formado em Ciência da Computação, com especialização em docência superior, desenvolvimento web e inteligência artificial. Apaixonado por tecnologia e sempre em busca de novos desafios. Atualmente, atuo como professor e desenvolvedor, compartilhando conhecimento através de cursos online e projetos de código aberto.</p>
-                </div>
-                <div class="redessociais">
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-solid fa-globe"></i></a>
-                </div>
+        <section id="ficha">
+            <img src="imagens/guanabara-perfil.jpg" alt="Foto do professor Gustavo Guanabara">
+            <h2>Gustavo Guanabara</h2>
+            <p>Formado em Ciência da Computação, com especialização em docência superior, desenvolvimento web e inteligência artificial. Apaixonado por tecnologia e sempre em busca de novos desafios. Atualmente, atuo como professor e desenvolvedor, compartilhando conhecimento através de cursos online e projetos de código aberto.</p>
+            <ul class="redessocias">
+                <li><a href="#" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#" target="_blank" rel="external"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank" rel="external"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" target="_blank" rel="external"><i class="fa-solid fa-globe"></i></a></li>
+            </ul>
         </section>
-
-        <section class="apresentacao" id="deixe-meapresentar">
-            <div class="title">
-                <h2><i class="fa-solid fa-hand-spock"></i>Deixe-me apresentar</h2>
-            </div>
+        <section id="apresentacao">
+            <h2><i class="fa-solid fa-handshake"></i>Deixe-me apresentar</h2>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VdWfSfWA_BQ?si=9FytR6BVV3ZTfrks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VdWfSfWA_BQ?si=iySeXXiWmrXu-V7i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="minhasskills" id="minhasskills">
-            <div class="habilidades">
-                <div class="title">
-                    <h2><i class="fa-solid fa-brain"></i>Minhas skills</h2>
-                </div>
+        <section id="minhas-skills">
+        <h2><i class="fa-solid fa-brain"></i>Minhas skills</h2>
+        <div class="container-skills">
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3> &lt;/&gt; HTML5</h3>
-                        <p>90%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 10%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; HTML5 <span class="porcentagem">90%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 90%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3> &lt;/&gt; CSS3</h3>
-                        <p>80%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 20%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; CSS3 <span class="porcentagem">80%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 80%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3> &lt;/&gt; JavaScript</h3>
-                        <p>75%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 25%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3> &lt;/&gt; PHP</h3>
-                        <p>60%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 40%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; JavaScript <span class="porcentagem">75%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 75%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3>Comunicação</h3>
-                        <p>100%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 0%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; PHP <span class="porcentagem">60%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 60%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3>Trabalho em equpe</h3>
-                        <p>90%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 10%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; Comunicação <span class="porcentagem">100%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 100%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3>Adaptabilidade</h3>
-                        <p>85%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 15%;"></div>
-                    </div>
-                </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; Trabalho em equipe <span class="porcentagem">90%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 90%;"></div>
+            </div>
+            </div>
 
-                <div class="skill">
-                    <div class="titleskills">
-                        <h3>Liderança</h3>
-                        <p>80%</p>
-                    </div>
-                    <div class="barradeprograsso">
-                        <div class="barracheia"></div>
-                        <div class="barravazia" style="width: 20%;"></div>
-                    </div>
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; Adaptabilidade <span class="porcentagem">85%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 85%;"></div>
+            </div>
+            </div>
+
+            <div class="skill">
+            <div class="oq-porcentagem">
+                <strong>&lt;/&gt; Liderança <span class="porcentagem">80%</span></strong>
+            </div>
+            <div class="barra">
+                <div class="barra-azul" style="width: 80%;"></div>
+            </div>
+            </div>
+
+        </div>
+        </section>
+
+            </div>
+        </section>
+        <section id="formacao">
+            <h2><i class="fa-solid fa-graduation-cap"></i>Formação</h2>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">2021 - 2024</p>
+                    <h3 class="title-formacao">Centro de inteligência Artificial</h3>
+                    <p>Técnicas para aplicação de IAs</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">2009 - 2010</p>
+                    <h3 class="title-formacao">Fundação para Ensino à Distância</h3>
+                    <p>Especialização para produção em ambientes EAD</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">2001 - 2003</p>
+                    <h3 class="title-formacao">Laboratório de Docência Superior</h3>
+                    <p>Docência para Ensino Superior Profissional</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">1998 - 2000</p>
+                    <h3 class="title-formacao">Centro de Graduação de Professores</h3>
+                    <p>Licenciatura em Informática</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">1995-2000</p>
+                    <h3 class="title-formacao">Instituo Superior de Tecnologia</h3>
+                    <p>Bacharelado em Ciência da Computação</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="barra-lateral"></div>
+                <div class="content">
+                    <p class="ano">1991 - 1994</p>
+                    <h3 class="title-formacao">Escola Técnica Carioca</h3>
+                    <p>Técnico em Informática</p>
                 </div>
             </div>
         </section>
+        <section id="projetos">
+            <h2><i class="fa-solid fa-trowel-bricks"></i>Projetos</h2>
 
-        <section class="formacao" id="formação">
-            <div class="containerformacao">
-                <div class="title">
-                    <h2><i class="fa-solid fa-newspaper"></i>Formação</h2>
-                </div>
-                <div class="containerdiplomas">
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                            <div class="diplomacontent">
-                                <p class="ano">2021 - 2024</p>
-                                <h3>Centro de inteligência artificial</h3>
-                                <p>Técnicas para aplicação de IAs</p>
-                            </div>
-                    </div>
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                        <div class="diplomacontent">
-                            <p class="ano">2001 - 2003</p>
-                            <h3>Laboratório de Docência Superior</h3>
-                            <p>Docência para Ensino Superior Profissional</p>
-                        </div>
-                    </div>
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                        <div class="diplomacontent">
-                            <p class="ano">1998 - 2000</p>
-                            <h3>Centro de Graduação de Professores</h3>
-                            <p>Licenciatura em Informática</p>
-                        </div>
-                    </div>
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                        <div class="diplomacontent">
-                            <p class="ano">1995-2000</p>
-                            <h3>Instituo Superior de Tecnologia</h3>
-                            <p>Bacharelado em Ciência da Computação</p>
-                        </div>
-                    </div>
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                        <div class="diplomacontent">
-                            <p class="ano">1991 - 1994</p>
-                            <h3>Escola Técnica Carioca</h3>
-                            <p>Técnico em Informática</p>
-                        </div>
-                    </div>
-                    <div class="diplomas">
-                        <div class="barralateral"></div>
-                        <div class="diplomacontent">
-                            <p class="ano">2009 - 2010</p>
-                            <h3>Fundação para Ensino à Distância</h3>
-                            <p>Especialização para produção em ambientes EAD</p>
-                        </div>
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-06-album.jpg" alt="Projeto Álbum de Fotos">
+                    <div class="sub-content">
+                        <p>2025</p>
+                        <h3>Projeto Álbum de Fotos</h3>
+                        <p>Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um álbum de fotos.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Mostrar fotos de tamanhos diferentes em uma mesma tela pode ser um grande desafio de design, mas também pode ser uma grande oportunidade para treinar nossos conhecimentos adquiridos sobre flexbox e criar uma maneira discreta e de bom-gosto para apresentar nossas memórias em forma de imagens.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-05-login.jpg" alt="Projeto Login">
+                    <div class="sub-content">
+                        <p>2024</p>
+                        <h3>Projeto Login</h3>
+                        <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-04-links.jpg" alt="Projeto Redes Sociais">
+                    <div class="sub-content">
+                        <p>2024</p>
+                        <h3>Projeto Redes Sociais</h3>
+                        <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-03-android.jpg" alt="Projeto Android">
+                    <div class="sub-content">
+                        <p>2023</p>
+                        <h3>Projeto Android</h3>
+                        <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-02-cordel.jpg" alt="Projeto Cordel">
+                    <div class="sub-content">
+                        <p>2023</p>
+                        <h3>Projeto Cordel</h3>
+                        <p>Projeto construído para treinar efeito parallax em imagens e a apresentaçao de conteúdo em diversos tamanhos de tela.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <div class="lateral-barra"></div>
+                <div class="content-projeto">
+                    <img src="imagens/projeto-01-videos.jpg" alt="Projeto de Videos">
+                    <div class="sub-content">
+                        <p>2022</p>
+                        <h3>Projeto de Vídeos</h3>
+                        <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
+                        <a href="javascript:void(0)" id="saibamais">
+                            <span><i class="fa-solid fa-play" style="color: black; font-size: 0.5em;"></i>Saiba Mais...</span>
+                        </a>
+                        <p class="add-content">
+                            Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
-        <div class="containerfooter">
-            <p>Portfólio desenvolvido por <a href="#" id="cursoemvideo"><strong>Curso em Video</strong></a> em 2025.</p>
-        </div>
+        <p>Portfólio desenvolvido por <a href=""><strong>Curso em Vídeo</strong></a> em 2025 </p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

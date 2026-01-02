@@ -1,3 +1,53 @@
+let btnSaibamais = document.getElementById('saibamais') 
+let iconSeta = document.getElementsByClassName(`fa-solid fa-play`)[0]
+let divAddContent = document.querySelector('p.add-content')
+
+btnSaibamais.addEventListener('click', SaberMais)
+
+function SaberMais(){
+  if (divAddContent.style.display == 'none'){
+    divAddContent.style.display = 'block'
+    iconSeta.style.transform = "rotate(90deg)"
+
+  } else {
+    divAddContent.style.display = 'none'
+    iconSeta.style.transform = "rotate(0deg)"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const botao = document.getElementById('botao-tema');
 const body = document.body;
 
@@ -38,3 +88,4 @@ navLinks.forEach(link => {
     }
   });
 });
+*/
